@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Education Visa",
+        "price": 117,
+        "picture": "https://i.ibb.co/tMrmSyM/juan-ramos-EWN0rrwb-BIQ-unsplash.jpg",
+        "rating": 4.5,
+        "description": "The United States government offers three student visa types including F, J, and M. Before you can apply for an F, J, or M student visa, you must first apply and be accepted by a U.S. institution of higher education that is certified by the Student Exchange and Visitor Program (SEVP). Even when an institution is SEVP-certified and able to issue I-20 and DS-2019 forms for use in visa applications, it may not hold national or regional accreditation. The U.S. Department of Education and Council for Higher Education Accreditation databases list accreditation status for all U.S. institutions. Institutions designated by the Bureau of Educational and Cultural Affairs to place participants in Academic Exchange programs (J visas) must be accredited. Recognition of course credits and degrees by other institutions and by U.S. and international employers is linked to an institution's accreditation. To learn more about accreditation talk to an EducationUSA Adviser in person or online"
+    },
+    {
+        "name": "Work Visa",
+        "price": 118,
+        "picture": "https://i.ibb.co/0FJtTNk/cytonn-photography-n95-VMLxq-M2-I-unsplash.jpg",
+        "rating": 4,
+        "description": "Generally, a citizen of a foreign country who wishes to enter the United States must first obtain a visa, either a nonimmigrant visa for temporary stay, or an immigrant visa for permanent residence. Temporary worker visas are for persons who want to enter the United States for employment lasting a fixed period of time, and are not considered permanent or indefinite. Each of these visas requires the prospective employer to first file a petition with U.S. Citizenship and Immigration Services (USCIS). An approved petition is required to apply for a work visa. Some temporary worker visa categories require your prospective employer to obtain a labor certification or other approval from the Department of Labor on your behalf before filing the Petition for a Nonimmigrant Worker, Form I-129, with USCIS. Your prospective employer should review the Instructions for Form I-129 on the USCIS website to determine whether labor certification is required for you."
+    },
+    {
+        "name": "Business Visa",
+        "price": 115,
+        "picture": "https://i.ibb.co/8XnyHS9/marten-bjork-6d-W3xy-Qvc-YE-unsplash.jpg",
+        "rating": 5,
+        "description": "The B-1/B-2 visitor visa is for people traveling to the United States temporarily for business (B-1) or for pleasure or medical treatment (B-2). Generally, the B-1 visa is for travelers consulting with business associates, attending scientific, educational, professional or business conventions/conferences, or settling an estate or negotiating contracts. The B-2 visa is for travel that is recreational in nature, including tourism, visits with friends or relatives, medical treatment and activities of a fraternal, social or service nature. Often, the B-1 and B-2 visas are combined and issued as one visa: the B-1/B-2. What is a business visa? Government authorities issue business visas to travelers who intend to conduct permissible business activities and attend meetings that do not constitute labor or employment in a specific country. Common activities performed on a business visa include: Attending meetings"
+    },
+    {
+        "name": "Family Visa",
+        "price": 106,
+        "picture": "https://i.ibb.co/6YdPXbk/sai-de-silva-4-g-FGb12h-FA-unsplash.jpg",
+        "rating": 3.5,
+        "description": "Two groups of family-based immigrant visa categories, immediate relatives and family preference, are provided under the provisions of U.S. immigration law, specifically the Immigration and Nationality Act (INA).  You may wish to review our Directory of Visa Categories  on usvisas.state.gov to learn more about these two categories of immigrant visas, as well as other types of immigrant visas to the United States.To apply for an immediate relative or family preference immigrant visa, follow the steps on the Immigrant Visa Process on usvisas.state.gov.  Once you have completed those steps, review the instructions given to you by the National Visa Center (NVC), along with the information presented on this website, for further guidance and instructions."
+    },
+    {
+        "name": "Tourist Visa",
+        "price": 126,
+        "picture": "https://i.ibb.co/bHtmFzf/goh-rhy-yan-4s-Xl-Vouu-Q-0-unsplash.jpg",
+        "rating": 4.5,
+        "description": "Generally, a citizen of a foreign country who wishes to enter the United States must first obtain a visa, either a nonimmigrant visa for a temporary stay, or an immigrant visa for permanent residence. Visitor visas are nonimmigrant visas for persons who want to enter the United States temporarily for business (visa category B-1), for tourism (visa category B-2), or for a combination of both purposes (B-1/B-2).You should schedule an appointment for your visa interview at the U.S. Embassy or Consulate in the country where you live. You may schedule your interview at another U.S. Embassy or Consulate, but be aware that it may be more difficult to qualify for a visa outside of the country where you live.Wait times for interview appointments vary by location, season, and visa category, so you should apply for your visa early. Review the interview wait time for the location where you will apply: "
+    },
+    {
+        "name": "immigration Visa",
+        "price": 197,
+        "picture": "https://i.ibb.co/K6tJ6Pt/eric-masur-Hkw1er-Brzwc-unsplash.jpg",
+        "rating": 5,
+        "description": "Two groups of family-based immigrant visa categories, immediate relatives and family preference, are provided under the provisions of U.S. immigration law, specifically the Immigration and Nationality Act (INA).  You may wish to review our Directory of Visa Categories  on usvisas.state.gov to learn more about these two categories of immigrant visas, as well as other types of immigrant visas to the United States.To apply for an immediate relative or family preference immigrant visa, follow the steps on the Immigrant Visa Process on usvisas.state.gov.  Once you have completed those steps, review the instructions given to you by the National Visa Center (NVC), along with the information presented on this website, for further guidance and instructions."
+    },
+    {
+        "name": "Diplomatic Visa",
+        "price": 143,
+        "picture": "http://placehold.it/32x32",
+        "rating": 5,
+        "description": "Two groups of family-based immigrant visa categories, immediate relatives and family preference, are provided under the provisions of U.S. immigration law, specifically the Immigration and Nationality Act (INA).  You may wish to review our Directory of Visa Categories  on usvisas.state.gov to learn more about these two categories of immigrant visas, as well as other types of immigrant visas to the United States.To apply for an immediate relative or family preference immigrant visa, follow the steps on the Immigrant Visa Process on usvisas.state.gov.  Once you have completed those steps, review the instructions given to you by the National Visa Center (NVC), along with the information presented on this website, for further guidance and instructions."
+    },
+    {
+        "name": "Transit visa",
+        "price": 189,
+        "picture": "https://i.ibb.co/fYBG5Y4/clay-banks-c2a0-Tyd-Ml-As-unsplash.jpg",
+        "rating": 4,
+        "description": "Millions of people travel to different destinations every year. Unfortunately, not all flights can be finished in one journey without stopping somewhere along the way. For this reason, most countries issue transit visas to help travelers who will only be transiting in that specific country for a few hours until moving on to their destination.A transit visa is a travel document allowing you to pass through another country until you reach your destination. For example, if you are traveling from India to the US, but you need to stop in the Schengen Zone to continue your flight for the US, you require a transit visa for the Schengen Area.Transit visas are short-term and are usually not required for everyone— that is why it’s important to contact an embassy or consulate before you travel to see if you need a transit visa.The transit zone is a designated area within an international airport where you can stay until your flight to your destination is ready to board. Transit zones allow you to wait in the airport without going through immigration— if you don’t leave the airport."
+    },
+    {
+        "name": "Consular Closings",
+        "price": 163,
+        "picture": "https://i.ibb.co/QpLZPWg/markus-winkler-c-O3m-Yl-CBxz-U-unsplash.jpg",
+        "rating": 5,
+        "description": "Students subject to these geographic COVID proclamations due to their presence in India, China, Iran, Brazil, or South Africa may qualify for a National Interest Exception only if their academic program, including optional practical training (OPT), begins August 1, 2021 or later. Students with valid F-1 and M-1 visas intending to begin or continue an academic program, including OPT, beginning August 1, 2021 or later do not need to contact an embassy or consulate to seek an individual National Interest Exception to travel. They may enter the United States no earlier than 30 days before the start of their academic studies. Students seeking to apply for new F-1 or M-1 visas should check the status of visa services at the nearest embassy or consulate; those applicants who are found to be otherwise qualified for an F-1 or M-1 visa will automatically be considered for a national interest exception to travel"
+    }
+]
