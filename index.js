@@ -36,17 +36,23 @@ async function run() {
             const service = await serviceCollection.findOne(query);
             res.send(service);
         })
-        app.post("/review/:id", async (req, res) => {
-            const review = req.body;
-            const result = await reviewCollection.insertOne(review);
-            res.send(result);
-        })
+
         app.get("/review/:id", async (req, res) => {
             const serviceId = req.params.id;
             const query = { serviceId: serviceId };
             const reviews = reviewCollection.find(query);
             const allReviews = await reviews.toArray();
             res.send(allReviews)
+        })
+        app.post("/services", async (req, res) => {
+            const newService = req.body;
+            const result = await serviceCollection.insertOne(newService);
+            res.send(result);
+        })
+        app.post("/review/:id", async (req, res) => {
+            const review = req.body;
+            const result = await reviewCollection.insertOne(review);
+            res.send(result);
         })
     }
     finally {
