@@ -1,6 +1,7 @@
 const express = require("express");
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const cors = require("cors");
+const jwt = require('jsonwebtoken');
 const app = express();
 require('dotenv').config();
 
@@ -14,10 +15,34 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@clu
 // const uri = "mongodb://localhost:27017"
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
+function verifyJWT(req, res, next) {
+    const authHeader = req.headers.authorization;
+    if (!authHeader) {
+        return res.status(401).send({ message: "unauthorize access" });
+    }
+    const token = authHeader.split(' ')[1];
+    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, function (err, decoded) {
+        if (err) {
+            return res.status(403).send({ message: "Forbidden access" });
+        }
+        req.decoded = decoded;
+        next()
+    })
+}
+
 async function run() {
     try {
         const serviceCollection = client.db("vivaVisa").collection("serviceCollection");
         const reviewCollection = client.db("vivaVisa").collection("reviewCollection");
+
+        app.post('/jwt', (req, res) => {
+            const user = req.body;
+            console.log(user);
+            const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1hr' });
+            res.send({ token })
+        })
+
         app.get('/', async (req, res) => {
             const query = {};
             const cursor = serviceCollection.find(query).limit(3);
@@ -44,7 +69,7 @@ async function run() {
             const allReviews = await reviews.toArray();
             res.send(allReviews)
         })
-        app.get("/reviews", async (req, res) => {
+        app.get("/reviews", verifyJWT, async (req, res) => {
             const email = req.query.email;
             const query = { email: email };
             const cursor = reviewCollection.find(query);
