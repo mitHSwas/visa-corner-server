@@ -33,19 +33,27 @@ async function run() {
             const services = await cursor.toArray();
             res.send(services);
         })
+        // app.get("/service/:id", async (req, res) => {
+        // const id = req.params.id;
+        // const query = { _id: ObjectId(id) };
+        // const service = await serviceCollection.findOne(query);
+        //     res.send(service);
+        // })
+
         app.get("/service/:id", async (req, res) => {
+            const serviceId = req.params.id;
+            const serviceQuery = { serviceId: serviceId };
+            const reviews = reviewCollection.find(serviceQuery);
+            const allReviews = await reviews.toArray();
+
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
             const service = await serviceCollection.findOne(query);
-            res.send(service);
-        })
-
-        app.get("/review/:id", async (req, res) => {
-            const serviceId = req.params.id;
-            const query = { serviceId: serviceId };
-            const reviews = reviewCollection.find(query);
-            const allReviews = await reviews.toArray();
-            res.send(allReviews)
+            const serviceDetails = {
+                details: service,
+                review: allReviews
+            }
+            res.send(serviceDetails);
         })
         app.get("/reviews", async (req, res) => {
             const email = req.query.email;
@@ -53,7 +61,6 @@ async function run() {
             const cursor = reviewCollection.find(query);
             const result = await cursor.toArray();
             res.send(result);
-            console.log(result)
         })
         app.post("/services", async (req, res) => {
             const newService = req.body;
@@ -67,13 +74,14 @@ async function run() {
         })
         app.patch("/review/:id", async (req, res) => {
             const id = req.params.id;
-            const updateReview = req.body.updateReview;
-            const updateRatings = req.body.updateRatings;
+            const newReview = req.body;
+            const updateReview = newReview.review;
+            const updateRatings = newReview.ratings;
             const query = { _id: ObjectId(id) };
             const updateDoc = {
                 $set: {
                     review: updateReview,
-                    rating: updateRatings
+                    ratings: updateRatings
                 }
             }
             const result = await reviewCollection.updateOne(query, updateDoc);
